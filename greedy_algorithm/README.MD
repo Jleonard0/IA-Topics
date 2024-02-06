@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Greedy Algorithm Project! This project implements a greedy algorithm for solving optimization problems. Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum. This README provides an overview of the project and instructions on how to use it.
+Welcome to the Greedy Algorithm Code! This project implements a greedy algorithm for solving optimization problems. Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum. This README provides an overview of the project and instructions on how to use it.
 
 ## Usage
 
@@ -36,7 +36,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Visão Geral
 
-Bem-vindo ao Projeto Algoritmo Guloso! Este projeto implementa um algoritmo guloso para resolver problemas de otimização. Algoritmos gulosos fazem escolhas localmente ótimas a cada passo na esperança de encontrar um ótimo global. Este README fornece uma visão geral do projeto e instruções sobre como usá-lo.
+Bem-vindo ao Código do Algoritmo Guloso! Este projeto implementa um algoritmo guloso para resolver problemas de otimização. Algoritmos gulosos fazem escolhas localmente ótimas a cada passo na esperança de encontrar um ótimo global. Este README fornece uma visão geral do projeto e instruções sobre como usá-lo.
 
 ## Uso
 
