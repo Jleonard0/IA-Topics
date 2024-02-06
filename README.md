@@ -10,7 +10,7 @@ Bem-vindo ao repositório Mostruário de Tópicos Especiais em IA! Aqui você en
 
 ## Table of Contents / Tabela de Conteúdos
 
-- [Project 1: Topic](./project1/README.md)
+- [Greedy Algorithm/Algoritmo Guloso](./greedy_algorithm/README.md)
 - [Project 2: Topic](./project2/README.md)
 - [Project 3: Topic](./project3/README.md)
 - [Project 4: Topic](./project4/README.md)
