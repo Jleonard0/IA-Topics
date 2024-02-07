@@ -28,7 +28,7 @@ Contributions are welcome! If you have ideas for improving this Tabu Search algo
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
 
 
 
@@ -62,4 +62,4 @@ Contribuições são bem-vindas! Se você tem ideias para melhorar esta implemen
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](../LICENSE) para obter mais detalhes.
