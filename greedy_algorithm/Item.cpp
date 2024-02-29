@@ -3,7 +3,10 @@
 
 Item::Item() : id(0), peso(0), valor(0) {}
 
-Item::Item(int id, int peso, int valor) : id(id), peso(peso), valor(valor) {}
+Item::Item(int id, int peso, int valor) : id(id), peso(peso), valor(valor) 
+{
+    this->f_heuristica();
+}
 
 
 int Item::getId() const { return id; }
