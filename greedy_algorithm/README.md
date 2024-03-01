@@ -8,7 +8,7 @@ This README provides an overview of the project and instructions on how to use i
 
 ## Prerequisites
 
--G++ or another c++ compiler
+- G++ or another c++ compiler
 
 
 ## Usage
@@ -78,7 +78,7 @@ Este README fornece uma visão geral do projeto e instruções sobre como usá-l
 
 ## Pré-requisitos
 
--G++ ou outro compilador de c++
+- G++ ou outro compilador de c++
 
 
 ## Uso
