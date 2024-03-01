@@ -1,6 +1,10 @@
 #ifndef ITEM_H
 #define ITEM_H
 
+#include <iostream>
+
+using namespace std;
+
 class Item {
 private:
     int id;
@@ -11,6 +15,7 @@ private:
 public:
     Item();
     Item(int id, int peso, int valor);
+    ~Item();
 
     
     int getId() const;
@@ -23,6 +28,7 @@ public:
     void setValor(int newValor);
 
     int f_heuristica();
+    void imprime_item() const;
 };
 
 #endif
