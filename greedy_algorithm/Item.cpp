@@ -23,7 +23,7 @@ void Item::setValor(int newValor) { valor = newValor; }
 
 int Item::f_heuristica()
 {
-    this->heuristica = (this->peso*2+this->valor*3)/5;
+    this->heuristica = ( this->peso*2 + this->valor*3 )/5;
 }
 
 void Item::imprime_item() const
