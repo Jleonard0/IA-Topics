@@ -8,11 +8,13 @@ class Graph
 {
 private:
     std::map<std::string, Vertex *> vertices;
+
 public:
     Graph();
     int numVertices();
-    Vertex* addVertex(Vertex* vertex);
-    Vertex* getVertex(std::string nameVertex);
+    Vertex *addVertex(Vertex *vertex);
+    Vertex *getVertex(std::string nameVertex);
+    bool isVertex(std::string nameVertex);
     bool addEdge(std::string nameVertexA, std::string nameVertexB, int cost);
     ~Graph();
 };
@@ -26,19 +28,43 @@ int Graph::numVertices()
     return this->vertices.size();
 }
 
-Vertex* Graph::addVertex(Vertex* vertex)
+Vertex *Graph::addVertex(Vertex *vertex)
 {
-    return new Vertex("a");
+    return this->vertices[vertex->getName()] = vertex;
 }
 
-Vertex* Graph::getVertex(std::string nameVertex)
+bool Graph::isVertex(std::string nameVertex)
 {
-    return this->vertices.find(nameVertex)->second;
+    std::map<std::string, Vertex *>::key_compare keycomp = this->vertices.key_comp();
+
+    for (auto i : this->vertices)
+    {
+        if (!keycomp(i.first, nameVertex))
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+Vertex *Graph::getVertex(std::string nameVertex)
+{
+    if (!this->isVertex(nameVertex))
+    {
+        return NULL;
+    }
+    return this->vertices[nameVertex];
 }
 
 bool Graph::addEdge(std::string nameVertexA, std::string nameVertexB, int cost)
 {
-    return false;
+    if (this->vertices.size() < 2 || !this->isVertex(nameVertexA) || !this->isVertex(nameVertexB))
+    {
+        return false;
+    }
+    this->vertices[nameVertexA]->addChild(this->vertices[nameVertexB], cost);
+    this->vertices[nameVertexB]->addChild(this->vertices[nameVertexA], cost);
+    return true;
 }
 
 Graph::~Graph()
