@@ -49,10 +49,9 @@ bool Vertex::addChild(Vertex *vertex, int cost)
 
 bool Vertex::isChildVertex(std::string nameVertex)
 {
-    std::map<std::string, std::pair<int, Vertex *> *>::key_compare keycomp = this->childVertices.key_comp();
     for (auto i : this->childVertices)
     {
-        if (!keycomp(i.first, nameVertex))
+        if (i.first == nameVertex)
         {
             return true;
         }

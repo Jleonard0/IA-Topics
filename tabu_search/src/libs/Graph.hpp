@@ -35,11 +35,9 @@ Vertex *Graph::addVertex(Vertex *vertex)
 
 bool Graph::isVertex(std::string nameVertex)
 {
-    std::map<std::string, Vertex *>::key_compare keycomp = this->vertices.key_comp();
-
     for (auto i : this->vertices)
     {
-        if (!keycomp(i.first, nameVertex))
+        if (i.first == nameVertex)
         {
             return true;
         }
